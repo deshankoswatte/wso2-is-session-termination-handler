@@ -1,4 +1,4 @@
-# com.wso2.session.termination.handler
+# wso2-is-session-termination-handler
 
 A custom event handler built to terminate active user sessions when there is a change in user roles.
 
