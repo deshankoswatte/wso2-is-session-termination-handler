@@ -1,0 +1,14 @@
+<FindBugsFilter>
+    <Match>
+        <Bug pattern="CRLF_INJECTION_LOGS"/>
+    </Match>
+    <Match>
+        <Bug pattern="FORMAT_STRING_MANIPULATION"/>
+    </Match>
+    <Match>
+        <Bug pattern="JAXRS_ENDPOINT"/>
+    </Match>
+    <Match>
+        <Bug pattern="IMPROPER_UNICODE"/>
+    </Match>
+</FindBugsFilter>
