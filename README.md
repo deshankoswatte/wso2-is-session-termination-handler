@@ -4,6 +4,27 @@ A custom event handler built to terminate active user sessions when there is a c
 
 ## Prepare
 
+### Prerequisites for Building
+
+The following prerequisites are required to build this project.
+
+- Java
+- Maven
+
+To check whether your environment adheres to these you can execute the `prerequisites.sh` file with the
+command `sh prerequisites.sh`. Something similar to the following will be shown at a successful execution.
+
+```
+openjdk version "1.8.0_302"
+OpenJDK Runtime Environment (build 1.8.0_302-b08)
+OpenJDK 64-Bit Server VM (build 25.302-b08, mixed mode)
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /xxx/xxx/.sdkman/candidates/maven/current
+Java version: 1.8.0_302, vendor: Oracle Corporation, runtime: /xxx/xxx/.sdkman/candidates/java/8.0.302-open/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-41-generic", arch: "amd64", family: "unix"
+```
+
 ### WSO2 Identity Server
 
 Find and open the `deployment.toml` file located at `<IS_HOME>/repository/conf/` and append the following lines to
@@ -54,3 +75,9 @@ Java Version - 1.8
 Identity Server Versions - IS-5.10.0, IS-5.11.0 (Logout doesn't work since back-channel logut was not available at the time of repo creation)
 Tomcat Version - 9.0.50
 ```
+
+### More Information
+
+For more information, please refer to
+the [Medium blog](https://deshankoswatte.medium.com/terminate-active-user-sessions-on-user-role-change-events-through-the-wso2-identity-sever-2462cf46eff8)
+which describes the entre process in detail.
